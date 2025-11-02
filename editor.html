@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Coding Editor - Belajar Bahasa Pemrograman Ikiii</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Coding Editor</h1>
+    <label>Pilih Bahasa:</label>
+    <select id="languageSelect">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="java">Java</option>
+        <option value="cpp">C++</option>
+    </select>
+
+    <textarea id="codeArea" rows="20" cols="80" placeholder="Tulis kode di sini..."></textarea>
+    <br>
+    <button onclick="runCode()">Jalankan</button>
+
+    <h2>Output:</h2>
+    <iframe id="output" style="width:100%; height:300px;"></iframe>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Room Class - Belajar Bahasa Pemrograman Ikiii</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Room Class</h1>
+    <p>Buat room baru atau join room yang sudah ada</p>
+
+    <form id="createRoomForm">
+        <label>Nama Room:</label>
+        <input type="text" id="roomName" required>
+        <button type="submit">Buat Room</button>
+    </form>
+
+    <form id="joinRoomForm">
+        <label>ID Room:</label>
+        <input type="text" id="roomID" required>
+        <label>Password Room:</label>
+        <input type="password" id="roomPass" required>
+        <button type="submit">Join Room</button>
+    </form>
+
+    <section id="roomChat">
+        <h2>Chat Room</h2>
+        <div id="messages"></div>
+        <input type="text" id="messageInput" placeholder="Ketik pesan...">
+        <button onclick="sendMessage()">Kirim</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
